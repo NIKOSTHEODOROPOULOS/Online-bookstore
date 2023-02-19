@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+<head><title>ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ </title>
+<meta charset="Utf-8";>
+</head>
+<body>
+
+<fieldset style="background-color:brown;">
+<legend style="text-align:center;"><strong style="color:yellow;"> Φορμα Επικοινωνίας</strong></legend>
+<form>
+<table>
+<tr><th>
+<label for="Name2">Ονοματεπώνυμο*:</label>
+<input type="text" id="Name2" name="Name2" required>
+</th></tr>
+<tr><th>
+E-mail*:<input type='email'  id="EM" name="EM">
+</th></tr>
+<tr><th>
+<label for="Τηλέφωνο">Tηλέφωνο:</label>
+<input type="number" id="Phone" name="phone" pattern="[0-9]" placeholder="210">
+</th></tr>
+<tr><th>
+<label for="question">Ερώτημα*:</label>
+<input type="text" required id="Q" name="Q" placeholder="Γεια σας" required>
+</th></tr>
+</table>
+<label for="υποχρεωτικό">Tα πεδία με * είναι υποχρεωτικά<br></label>
+<input type="reset" value="Kαθαρισμος πεδίων"> <br>
+<button type='submit' onclick="sendmail()">Αποστολή</button>
+
+</form>
+</fieldset>
+Για επιστροφή στην κεντρική σελιδά πατηστε<a href="ΚΕΝΤΡΙΚΗ ΣΕΛΙΔΑ.HTML"> εδώ </a><br>
+<h1>ΒΙΒΛΙΟ ΠΡΟΤΑΣΗ</h1>
+<p><strong>Ο μικρός Νικόλας (γαλλ. Le petit Nicolas) είναι δημιούργημα του σεναριογράφου Ρενέ Γκοσινί (Rene Goscinny, 1926-1977) και του σκιτσογράφου Ζαν Ζακ Σανπέ (Jean-Jacques Sempé, 1932-...). Είναι ο κεντρικός ήρωας της σειράς βιβλίων "Οι περιπέτειες του μικρού Νικόλα", ένα αθώο και χαριτωμένο παιδάκι που ζει με την οικογένειά του και τους φίλους του σε κάποια (μη καθορισμένη) πόλη της Γαλλίας τις δεκαετίες του 1950 και του 1960.
+
+Οι ιστορίες δημοσιεύτηκαν την περίοδο 1956-1964, αρχικά στη βελγική εφημερίδα Le Mystique και αργότερα (από το 1959) στις γαλλικές Sud Ouest και Pilot.</p>
+</strong>
+
+<h2>Για περισσότερες πληροφορίες πατηστε πανω στην εικονα</h2>
+<map name="map1">
+<area href=" https://el.wikipedia.org/wiki/%CE%9F_%CE%BC%CE%B9%CE%BA%CF%81%CF%8C%CF%82_%CE%9D%CE%B9%CE%BA%CF%8C%CE%BB%CE%B1%CF%82" alt="Image map test" shape="rect"
+coords="1,2,186,287"> 
+</map>
+<img src="Ν.JPG" alt="Image with map" usemap="#map1">
+<br>
+
+Ένα τηλεοπτικό επεισόδιο από την σειρά που γυρίστηκε βασισμένη στα βιβλία του μικρού Νικόλα
+<br><iframe width="853" height="480" src="https://www.youtube.com/embed/NdI5AgcdYzQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+
+<script>
+function sendmail() {
+var x,l,e;
+x = document.getElementById("Name2").value;
+l = document.getElementById("Q").value;
+e = document.getElementById("EM").value;
+	    if (x == "" || l == "" || e == "") alert( "Εχεις αφησει υποχρεωτικό πεδιο κενο");
+		else {
+		open("mailto:nikos1036@Hotmail.com");
+		}
+}
+</script>
+</body>
+</html>

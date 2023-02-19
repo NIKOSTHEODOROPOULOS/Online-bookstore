@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+<head><title>BIBΛΙΟΠΩΛΕΙΟ</title>
+<meta charset="Utf-8";>
+
+</head>
+
+<body>
+<h1 style="text-align:center;"><strong> SITE ΒΙΒΛΙΟΠΩΛΕΙΟΥ</strong></h1>
+
+
+<p>Βιβλιοπωλείο είναι συνήθως ο κτηριακός χώρος όπου διατίθενται προς πώληση πολλών ειδών βιβλία που καλύπτουν όλους τους τομείς της γνώσης.<br>
+Σήμερα χάρις την τεχνολογία να σας παρέχουμε τη δυνατότητα να βρείτε το υλικό που σας ενδιαφέρει και να το προμηθευτείτε μέσω μιας ηλεκτρονικής διαδικασίας που ορίζει το καθε βιβλιοπωλείο.
+<br>Για την δική μας διαδικασία πατήστε <a href="προτιμήσεις.php"> εδω</a> </p>
+
+<table style="background-color:orange;float:center; font-size:25">
+	    <tr>
+			<th style="font-size:20px;color:blue;"><ins>ΩΡΕΣ ΛΕΙΤΟΥΡΓΙΑΣ ΒΙΒΛΙΟΠΩΛΕΙΟΥ:</ins></span></strong></th>
+		</tr>
+		<tr>
+		    <th>Δευτέρα:09.00 – 14.30</th>
+		</tr>
+		<tr>
+		    <th>Τρίτη: 09.00 – 14.00  και  18.00 – 21.00</th>
+		</tr>
+		<tr>
+	        <th>Τετάρτη:09.00 – 14.00</th>
+	    </tr>
+	    <tr>
+	        <th>Πέμπτη :09.00 – 14.00 και 18.00 – 21.00</th>
+	    </tr>
+	    <tr>
+            <th>Παρασκευή :09.00 – 14.00 και 18.00 – 21.00</th>
+	    </tr>
+  		<tr>
+	        <th>Σάββατο :09.00 – 14.00</th>
+		</tr>
+		<tr>
+	        <th>Κυριακή:ΚΛΕΙΣΤΑ</th>
+		</tr>
+	  </table>
+<p><strong> Για να επικοινωνήσετε μαζί μας πατήστε<a href="FE2.HTML"> εδώ  </a>. Θα χαρούμε να δεχθούμε και να απαντήσουμε οποιοδήποτε σχόλιο ή ερώτησή σας<br>
+Για άμεση εξυπηρέτηση, καλέστε στο
+2009556555 (εργάσιμες ημέρες και ώρες).</strong><p>
+<div style="float:right">
+<strong style="float:left;color:#F5F5DC">Για να δείτε πληροφορίες για τα βιβλία κάντε κλίκ πάνω στις εικόνες</strong>
+<img class="CHB" src="HR.jpg" style="width:250px;height:330px" alt="Image with map" usemap="#map1">
+<img class ="CHB" src="34.jpg" style="width:250px;height:330px" alt="Image with map" usemap="#map1">
+<img class ="CHB" src="Ε.jpg" style="width:250px;height:330px" alt="Image with map" usemap="#map1">
+<img class ="CHB" src="Ε3.jpg" style="width:250px;height:330px" alt="Image with map" usemap="#map1">
+<img class ="CHB" src="Ε4.jpg" style="width:250px;height:330px" alt="Image with map" usemap="#map1">
+<map name="map1">
+<area href="ΒΙΒΛΙΑ.HTML" alt="Image map test" shape="rect" coords="0,1,250,329">
+</map>
+</div>
+
+<script>
+var myIndex = 0;
+changeImage();
+
+function changeImage() {
+    var i;
+    var x = document.getElementsByClassName("CHB");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(changeImage, 10000);
+}
+
+</script>
+<script>
+function myFunction() {
+open("FE2.HTML");
+
+}
+</script>
+</body>
+</html>
